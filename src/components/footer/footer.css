@@ -1,0 +1,16 @@
+.footer_logo {
+    padding-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer_logo {
+        padding-bottom: 0px;
+    }
+}

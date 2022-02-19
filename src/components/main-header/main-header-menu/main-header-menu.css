@@ -1,0 +1,23 @@
+.main-header-menu_link {
+    text-decoration: none;
+}
+
+.main-header-menu_item {
+    margin-right: 55px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-header-menu_logo {
+        height: 25px;
+    }
+
+    .main-header-menu_item {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .main-header-menu_item {
+        margin-right: 10px;
+    }
+}

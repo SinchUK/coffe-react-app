@@ -1,0 +1,50 @@
+.main-content-container {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px 100px;
+}
+
+.main-content-box {
+    width: 38%;
+    /* padding: 0 130px; */
+    text-align: center;
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.main-content-box h3 {
+    font-size: 1rem;
+    line-height: 2.188rem;
+}
+
+.main-content-item img {
+    margin-bottom: 20px;
+}
+
+.main-content-item p {
+    margin: 40px 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-content-box {
+        width: 59%;
+    }
+
+    .main-content-item img {
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content-box {
+        font-size: 0.8rem;
+        width: 70%;
+    }
+
+    .main-content-container {
+        padding: 70px 0px 50px;
+    }
+}

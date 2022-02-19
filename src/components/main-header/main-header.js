@@ -1,12 +1,24 @@
-import MainHeaderMenu from '../main-header-menu/main-header-menu';
-import MainHeaderContent from '../main-header-content/main-header-content';
+import MainHeaderMenu from './main-header-menu/main-header-menu';
+import MainHeaderContent from './main-header-content/main-header-content';
 
-const MainHeader = () => {
+import { styled } from '@mui/styles';
+
+
+const HeaderContainer = styled('div') ({
+    maxWidth: '80%',
+    margin: '0 auto',
+    paddingTop: '1.25rem',
+})
+
+
+
+const MainHeader = (props) => {
+    const {color, path} = props;
     return (
-        <div>
-            <MainHeaderMenu/>
+        <HeaderContainer>
+            <MainHeaderMenu color={color} path={path}/>
             <MainHeaderContent/>
-        </div>
+        </HeaderContainer>
     )
 } 
 

@@ -5,7 +5,7 @@ import { styled } from '@mui/styles';
 
 
 const HeaderContainer = styled('div') ({
-    maxWidth: '80%',
+    maxWidth: '90%',
     margin: '0 auto',
     paddingTop: '1.25rem',
 })

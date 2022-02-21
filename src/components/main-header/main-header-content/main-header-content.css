@@ -77,7 +77,7 @@
     }
 
     .main-header-content-item_question {
-        width: 65%;
+        width: 67%;
     }
 
     .main-header-content button {
@@ -93,9 +93,20 @@
     }
 }
 
-
 @media only screen and (max-width : 426px) {
     .main-header-content-item_title h3 {
-        margin-right: 1rem;
+        margin-right: 0px;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+
+    .main-header-content-item_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-header-content-item_text p, .main-header-content-item_question p {
+        line-height: 1rem;
     }
 }

@@ -1,5 +1,6 @@
 import { styled } from '@mui/styles';
 import './main-header-content.css';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 
@@ -10,15 +11,30 @@ const HeaderContent = styled('div') ({
     alignItems: 'center'
 });
 
-const ContentBox = styled('div') ({
-    display: 'flex',
-    flexDirection: 'column',
-    width: '66%',
-    alignItems: 'center'
-})
+
+
 
 
 const MainHeaderContent = () => {
+    let ContentBox;
+    const matches = useMediaQuery('(max-width:426px)');
+    if (matches) {
+        ContentBox = styled('div') ({
+            display: 'flex',
+            flexDirection: 'column',
+            width: '90%',
+            alignItems: 'center'
+        })
+    
+    } else {
+        ContentBox = styled('div') ({
+            display: 'flex',
+            flexDirection: 'column',
+            width: '66%',
+            alignItems: 'center'
+        })
+    }
+
     return (
         <HeaderContent>
             <ContentBox className='main-header-content'>

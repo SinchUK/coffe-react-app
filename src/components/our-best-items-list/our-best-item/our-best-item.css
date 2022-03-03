@@ -1,7 +1,3 @@
-.our-best-item_container {
-    padding: 90px 0px;
-}
-
 .our-best-item_container h3 {
     text-align: center;
     padding: 20px 0px;
@@ -14,7 +10,6 @@
 
 .our-best-item {
     display: flex;
-    height: 100%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -35,6 +30,7 @@
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .our-best-item_block img {
@@ -59,15 +55,11 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .our-best-item_container {
         padding: 25px 0px;
     }
-
-    /* .our-best-container{
-        height: 450px;
-    } */
-}
+} */
 
 @media only screen and (max-width: 768px) {
     .our-best-item_block {

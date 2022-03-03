@@ -6,7 +6,7 @@ import Paper from '@mui/material/Paper';
 
 import MainHeader from '../main-header/main-header';
 import MainContent from '../main-content/main-content';
-import OurBest from '../our-best/our-best';
+import OurBestItemsList from '../our-best-items-list/our-best-items-list';
 import Footer from '../footer/footer';
 
 import './app.css';
@@ -27,9 +27,9 @@ export default class App extends Component {
         super(props);
         this.state = {
             data: [
-                {name: 'Solimo Coffee Beans 2kg', price: 10.73, src: '/img/solimo.png'},
-                {name: 'Presto Coffee Beans 1kg', price: 15.99, src: 'img/presto-1.png'},
-                {name: 'AROMISTICO Coffee 1 kg', price: 6.99, src: 'img/aromistico.png'}
+                {name: 'Solimo Coffee Beans 2kg', price: 10.73, src: '/img/solimo.png', id: 1},
+                {name: 'Presto Coffee Beans 1kg', price: 15.99, src: 'img/presto-1.png', id: 2},
+                {name: 'AROMISTICO Coffee 1 kg', price: 6.99, src: 'img/aromistico.png', id: 3}
             ] 
         };
         this.menuTheme = [ 
@@ -52,8 +52,8 @@ export default class App extends Component {
                     <Grid item xs={12}>
                         <MainContent/>
                     </Grid>
-                    <Grid item xs={12}>
-                        <OurBest/>
+                    <Grid item xs={12} className="text-align-center">
+                        <OurBestItemsList data={this.state.data}/>
                     </Grid>
                     <Grid item xs={12}>
                         <Footer color={this.menuTheme[1].color} path={this.menuTheme[1].path}/>
